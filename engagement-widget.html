@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement Widget</title>
+</head>
+<body>
+    <!-- Start Engagement Widget Script -->
+    <script>
+        (function (w, i, d, g, e, t) {
+            window.engagementContextExtra = {
+                // Add your custom data here
+            };
+
+            function setAttribute(kv) {
+                s.setAttribute(kv[0], kv[1]);
+            }
+
+            var s = w.createElement(i);
+            d.forEach(setAttribute);
+            w.body.appendChild(s);
+        })(
+            document,
+            'script',
+            [['async', 1],
+                ['crossorigin', 1],
+                ['type', 'module'],
+                ['id', 'engagementWidget'],
+                ['src', 'https://cdn.chatwidgets.net/widget/livechat/bundle.js'],
+                ['data-env', 'portal-api'],
+                ['data-instance', 'ZfvI5IeJ8GYPdoEq'],
+                ['data-container', '#engagement-widget-container']]
+        );
+    </script>
+    <!-- End Engagement Widget Script -->
+</body>
+</html>
